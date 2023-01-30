@@ -2,7 +2,6 @@ import { FiArrowLeft, FiClock } from 'react-icons/fi';
 import { Container, Content } from "./styles";
 
 import { Header } from "../../components/Header";
-import { ButtonText } from "../../components/ButtonText";
 import { Rating } from "../../components/Rating";
 import { Input } from "../../components/Input";
 import { Tag } from "../../components/Tag";
@@ -16,7 +15,10 @@ export function Details() {
       </Header>     
       <main>
         <Content>
-          <ButtonText icon={FiArrowLeft} title="Voltar"/>
+          <a href="#">
+            <FiArrowLeft />
+            Voltar
+          </a>
           <div className="movie">
               <h1>Closer</h1>
               <Rating grade="5" isBigSize />

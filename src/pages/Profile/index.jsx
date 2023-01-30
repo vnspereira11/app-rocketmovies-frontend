@@ -9,8 +9,9 @@ export function Profile() {
   return (
     <Container>
       <header>
-        <a href="/">
-          <FiArrowLeft />          
+        <a href="#">
+          <FiArrowLeft /> 
+          Voltar         
         </a>
       </header>
       <Form>

@@ -4,9 +4,8 @@ import { Container, Form, Wrapper } from "./styles";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 import { Textarea } from "../../components/Textarea";
-import { Button } from "../../components/Button";
-import { ButtonText } from "../../components/ButtonText";
 import { Section } from "../../components/Section";
+import { Button } from "../../components/Button";
 import { NoteItem } from "../../components/NoteItem";
 
 
@@ -19,7 +18,10 @@ export function New() {
             <main>
                 <Form>
                     <header>
-                        <ButtonText icon={FiArrowLeft} title="Voltar"/>
+                        <a href="#">
+                            <FiArrowLeft />
+                            Voltar
+                        </a>
                         <h1>Novo filme</h1>
                     </header>
                     <Wrapper>
@@ -38,7 +40,7 @@ export function New() {
                         <Button title="Salvar alterações" />
                     </div>
                 </Form>
-            </main>
+            </main>            
         </Container>
     );
 };

@@ -3,7 +3,6 @@ import { Container, Form, Background } from "./styles";
 
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
-import { ButtonText } from "../../components/ButtonText";
 
 export function SignIn() {
     return (
@@ -25,7 +24,9 @@ export function SignIn() {
                     icon={FiLock}
                 />
                 <Button title="Entrar" />
-                <ButtonText title="Criar conta"/>
+                <a href="#">
+                    Criar conta
+                </a>
             </Form>
             <Background />
         </Container>

@@ -1,13 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-    background: none;
+    
+    height: 5.6rem;
+
+    background-color: ${({ theme }) => theme.COLORS.PINK};
+    color: ${({ theme }) => theme.COLORS.GRAY};
+
+    border-radius: 8px;
     border: none;
-    color: ${({ theme }) => theme.COLORS.PINK};
+
     font-size: 1.6rem;   
+    font-weight: 500;
+    padding: 0 1.6rem;
     
     display: flex;    
-    align-items: flex-end;
+    align-items: center;
     gap: 0.8rem;
 
     > svg {

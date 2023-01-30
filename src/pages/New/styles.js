@@ -34,6 +34,17 @@ export const Form = styled.form`
 
     > header {
         
+        a {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: ${({ theme }) => theme.COLORS.PINK};
+        }
+
+        svg {
+            font-size: 2rem;;
+        }
+
         h1 {
             margin: 2.4rem 0 4rem 0;
             font-size: 3.6rem;

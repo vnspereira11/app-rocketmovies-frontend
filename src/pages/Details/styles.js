@@ -34,6 +34,17 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
 
+    > a {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        color: ${({ theme }) => theme.COLORS.PINK};
+
+        svg {
+            font-size: 2rem;
+        }
+    }
+
     .movie {
         display: flex;
         align-items: center;
