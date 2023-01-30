@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.header`
     grid-area: header;
@@ -27,7 +28,7 @@ export const Search = styled.div`
   flex-grow: 1;
 `;
 
-export const Profile = styled.div`
+export const Profile = styled(Link)`
     display: flex;
     align-items: center;    
     gap: 1rem;
@@ -36,6 +37,7 @@ export const Profile = styled.div`
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        color: ${({ theme }) => theme.COLORS.WHITE};
     }
 
     > img {

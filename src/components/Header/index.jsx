@@ -10,7 +10,7 @@ export function Header({ children }) {
                 {children}
             </Search>
             
-            <Profile>
+            <Profile to="/profile">
                 <div>
                     <strong>Vanessa Pereira</strong>
                     <Logout>sair</Logout>

@@ -1,9 +1,8 @@
 import { FiPlus } from "react-icons/fi";
-import { Container, Content } from "./styles";
+import { Container, Content, New } from "./styles";
 
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
-import { ButtonText } from "../../components/ButtonText";
 import { Note } from "../../components/Note";
 
 export function Home() {
@@ -16,7 +15,10 @@ export function Home() {
         <Content>
           <header>
             <h1>Meus filmes</h1>
-            <ButtonText icon={FiPlus} title="Adicionar filme"/>
+            <New to="/new">
+              <FiPlus />
+              Adicionar filme
+            </New>
           </header>
 					<div className="notes">
 						<Note data={{ 
