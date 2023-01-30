@@ -10,6 +10,21 @@ export const Container = styled.div`
     "header"
     "content";
 
+    > main {
+        grid-area: content;
+        overflow-y: auto;
+    }
+
+    main::-webkit-scrollbar {
+        width: 0.8rem;    
+    }
+  
+    main::-webkit-scrollbar-thumb {
+        background-color: ${({ theme }) => theme.COLORS.PINK};
+        border-radius: 0.8rem;
+        width: 0.8rem;
+    }
+    
     .tags {
         display: flex;
         justify-content: flex-start;

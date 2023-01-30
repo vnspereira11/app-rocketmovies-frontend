@@ -7,6 +7,7 @@ export const Container = styled.span`
     background-color: ${({ theme }) => theme.COLORS.GRAY};
     border-radius: 0.8rem;
 
+    color: ${({ theme }) => theme.COLORS.PINK_LIGHT};
     font-size: 1.2rem;
     line-height: 1.4rem;
     text-align: center;

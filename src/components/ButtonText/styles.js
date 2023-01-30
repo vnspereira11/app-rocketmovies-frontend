@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-    
+    width: 20rem;
     height: 5.6rem;
 
     background-color: ${({ theme }) => theme.COLORS.PINK};
@@ -15,6 +15,7 @@ export const Container = styled.button`
     padding: 0 1.6rem;
     
     display: flex;    
+    justify-content: center;
     align-items: center;
     gap: 0.8rem;
 

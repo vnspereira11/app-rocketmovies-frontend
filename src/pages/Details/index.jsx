@@ -4,7 +4,7 @@ import { Container, Content } from "./styles";
 import { Header } from "../../components/Header";
 import { Rating } from "../../components/Rating";
 import { Input } from "../../components/Input";
-import { Tag } from "../../components/Tag";
+import { Tag } from "../../components/Tag";      
 
 
 export function Details() {
