@@ -30,16 +30,10 @@ export const Search = styled.div`
 
 export const Profile = styled(Link)`
     display: flex;
-    align-items: center;    
-    gap: 1rem;
-
-    > div {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        color: ${({ theme }) => theme.COLORS.WHITE};
-    }
-
+    align-items: center;
+    gap: 0.8rem;
+    color: ${({ theme }) => theme.COLORS.WHITE};
+    
     > img {
         width: 6.4rem;
         height: 6.4rem;
@@ -53,5 +47,9 @@ export const Logout = styled.button`
 
     color: ${({ theme }) => theme.COLORS.GRAY_LIGHT};
     font-size: 1.4rem;
-    line-height: 1.8rem;
+    line-height: 1.8rem;  
+    
+    position: relative;
+    top: 18px;
+    right: 100px;
 `;
