@@ -61,6 +61,14 @@ const navigate = useNavigate();
     navigate(-1);
   };
 
+  function handleDiscardNewNote() {
+    const discard = window.confirm("Deseja sair e descartar as alterações?");
+
+    if(discard) {
+      navigate(-1);
+    };
+  };
+
     return (
       <Container>
         <Header>
@@ -110,7 +118,10 @@ const navigate = useNavigate();
               </div>
             </Section>
             <div className="call-to-action">
-              <Button title="Descartar alterações" />
+              <Button 
+                title="Descartar alterações"
+                onClick={handleDiscardNewNote} 
+              />
               <Button 
                 title="Salvar alterações" 
                 onClick={handleNewNote}
