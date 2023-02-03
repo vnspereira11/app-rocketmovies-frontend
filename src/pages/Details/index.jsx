@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 import { useAuth } from "../../hooks/auth"; 
 import { api } from "../../services/api";
+import avatarPlaceholder from "../../assets/avatar_placeholder.svg";
 
 import { FiArrowLeft, FiClock } from 'react-icons/fi';
 
@@ -18,6 +19,8 @@ export function Details() {
 
   const params = useParams();
   const { user } = useAuth();
+
+  const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder;
 
   useEffect(() => {
     async function fetchNote() {
@@ -45,7 +48,7 @@ export function Details() {
                 <Rating grade={data.rating} isBigSize />
             </div>
             <div className="author">
-                <img src="https://github.com/vnspereira11.png" alt="Foto do usuário" />
+                <img src={avatarUrl} alt={user.name} />
                 <span>Por {user.name}</span>
                 <FiClock />
                 <span>{data.created_at}</span>
