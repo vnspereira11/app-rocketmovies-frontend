@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { FiPlus } from "react-icons/fi";
 
 import { api } from "../../services/api";
@@ -13,13 +15,18 @@ export function Home() {
   const [search, setSearch] = useState("");
   const [notes, setNotes] = useState([]);
 
+  const navigate = useNavigate();
+
+  function handleDetails(id) {
+    navigate(`/details/${id}`);
+  };
+
   useEffect(() => {
     async function fetchNotes() {
       const response = await api.get(`/notes?title=${search}`);
       setNotes(response.data);
     }
     fetchNotes();
-
   }, [search]);
   
   return (
@@ -45,6 +52,7 @@ export function Home() {
                 <Note 
                   key={String(note.id)}
                   data={note}
+                  onClick={() => handleDetails(note.id)}
                 />
               ))
             }
