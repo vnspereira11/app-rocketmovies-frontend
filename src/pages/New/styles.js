@@ -25,7 +25,7 @@ export const Container = styled.div`
         width: 0.8rem;
     }
     
-    .tags {
+    .tags {        
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
